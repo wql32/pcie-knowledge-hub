@@ -28,7 +28,9 @@ jobs:
           cache: npm
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          npm install
+          npm install vitepress vue
 
       - name: Build
         run: npm run build
